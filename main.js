@@ -1,19 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ページロード時のHeroセクションアニメーショントリガー
+    // ページロード時のアニメーショントリガー
     setTimeout(() => {
-        document.querySelector('.hero-section').classList.add('loaded');
-        const heroElements = document.querySelectorAll('#hero .fade-up');
-        heroElements.forEach(el => el.classList.add('in-view'));
+        const hero = document.querySelector('.hero-section');
+        if (hero) hero.classList.add('loaded');
+        
+        // ファーストビューの要素をアニメーション
+        const firstViewElements = document.querySelectorAll('#hero .fade-up, .beans-hero .fade-up');
+        firstViewElements.forEach(el => el.classList.add('in-view'));
     }, 100);
 
     // ナビゲーションバーのスクロール連動
     const navbar = document.getElementById('navbar');
     const heroSection = document.getElementById('hero');
-    let heroHeight = heroSection.offsetHeight;
+    let heroHeight = heroSection ? heroSection.offsetHeight : 0;
 
     window.addEventListener('resize', () => {
-        heroHeight = heroSection.offsetHeight;
+        if (heroSection) heroHeight = heroSection.offsetHeight;
     });
 
     window.addEventListener('scroll', () => {

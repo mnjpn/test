@@ -39,6 +39,32 @@
             color: var(--accent);
             font-weight: 400;
         }
+        .farm-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 5rem;
+            align-items: center;
+        }
+        .farm-section.reverse {
+            margin-top: 3rem;
+        }
+        .farm-section img {
+            width: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+            aspect-ratio: 4/3;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        @media (max-width: 768px) {
+            .farm-section {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .farm-section.reverse img {
+                order: -1;
+            }
+        }
     </style>
 </head>
 <body class="bg-dark text-light">
@@ -77,6 +103,28 @@
                     豆の個性を最大限に引き出すため、毎日その日の気温や湿度に合わせて焙煎のプロファイル（温度や時間のグラフ）を微調整しています。<br>
                     浅煎りでフルーティな酸味を楽しむものから、深煎りで深いコクとチョコレートのような甘みを堪能するものまで、豆本来の魅力を余すところなく引き出します。
                 </p>
+            </div>
+
+            <div class="farm-section fade-up delay-1">
+                <img src="assets/coffee_farm.png" alt="美しいコーヒー農園の風景">
+                <div class="farm-text text-container">
+                    <h3 class="detail-title" style="margin-bottom: 1rem;">豊かな大地が育む奇跡</h3>
+                    <p class="section-text" style="margin: 0; max-width: 100%; text-align: left;">
+                        私たちのコーヒーの故郷は、標高が高く、朝晩の寒暖差が激しい山間部にあります。この厳しい環境こそが、コーヒーチェリーの甘みを凝縮させ、複雑で奥深い香りを作り出します。<br><br>
+                        肥沃な土壌と澄んだ空気、そして豊かな水源。大自然の恵みをたっぷりと吸収した豆だけを使用しています。
+                    </p>
+                </div>
+            </div>
+
+            <div class="farm-section reverse fade-up delay-2">
+                <div class="farm-text text-container">
+                    <h3 class="detail-title" style="margin-bottom: 1rem;">生産者との確かな絆</h3>
+                    <p class="section-text" style="margin: 0; max-width: 100%; text-align: left;">
+                        本当に素晴らしいコーヒーは、農家の熟練の技と深い愛情から生まれます。<br><br>
+                        私たちは現地の農家と直接コミュニケーションを取り、土壌作りから収穫、精製プロセスに至るまでを共に高め合っています。持続可能な農業を支援し、彼らの情熱が詰まった最高の状態の豆を適正な価格で提供しています。
+                    </p>
+                </div>
+                <img src="assets/coffee_farmer.png" alt="コーヒーチェリーを確かめる農家">
             </div>
             
             <a href="index.html" class="back-link fade-up delay-2">← トップページへ戻る</a>

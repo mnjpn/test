@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆へのこだわり | Cafe Luminous</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: inline-block;
+            margin-top: 4rem;
+            color: var(--accent);
+            text-decoration: none;
+            border-bottom: 1px solid var(--accent);
+            padding-bottom: 2px;
+            transition: opacity 0.3s;
+            font-size: 1.1rem;
+        }
+        .back-link:hover {
+            opacity: 0.7;
+        }
+        .beans-hero {
+            padding: 10rem 2rem 6rem;
+        }
+        .detail-block {
+            margin-top: 4rem;
+            text-align: left;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 3rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .detail-title {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body class="bg-dark text-light">
+    <!-- ナビゲーションバーは他のページと同じ -->
+    <nav id="navbar" style="background: rgba(0, 0, 0, 0.8);">
+        <div class="logo">Cafe Luminous</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#beans">Beans</a></li>
+            <li><a href="index.html#atmosphere">Atmosphere</a></li>
+        </ul>
+    </nav>
+
+    <section class="content-section beans-hero bg-dark text-light">
+        <div class="container">
+            <h1 class="section-title fade-up">豆へのこだわり</h1>
+            <p class="section-text fade-up delay-1" style="margin-bottom: 4rem;">
+                一杯のコーヒーが生まれるまでには、数え切れないほどの物語があります。<br>
+                私たちが選ぶ豆は、単なる農作物ではありません。それぞれの生産者が丹精込めて育て上げた、芸術作品とも言える一粒一粒です。
+            </p>
+            
+            <div class="image-showcase fade-in">
+                <img src="assets/coffee_beans_macro_1776573199091.png" alt="厳選されたプレミアルコーヒー豆" class="showcase-img">
+            </div>
+            
+            <div class="detail-block fade-up delay-2">
+                <h3 class="detail-title">妥協なき厳選のプロセス</h3>
+                <p class="section-text" style="margin: 0; max-width: 100%; text-align: left; margin-bottom: 3rem;">
+                    世界中の農園からサンプルを取り寄せ、カッピングと呼ばれるテイスティングを繰り返します。<br>
+                    私たちが求めるのは、単に「美味しい」だけでなく、その土地のテロワール（風土）を感じられるような、際立った個性を持つ味わいです。<br>
+                    フェアトレードや環境への配慮など、持続可能な農園からのみ調達しています。
+                </p>
+
+                <h3 class="detail-title">日々の変化に寄り添う焙煎の美学</h3>
+                <p class="section-text" style="margin: 0; max-width: 100%; text-align: left;">
+                    豆の個性を最大限に引き出すため、毎日その日の気温や湿度に合わせて焙煎のプロファイル（温度や時間のグラフ）を微調整しています。<br>
+                    浅煎りでフルーティな酸味を楽しむものから、深煎りで深いコクとチョコレートのような甘みを堪能するものまで、豆本来の魅力を余すところなく引き出します。
+                </p>
+            </div>
+            
+            <a href="index.html" class="back-link fade-up delay-2">← トップページへ戻る</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Cafe Luminous</h2>
+            <p>123 Coffee Street, Shibuya, Tokyo<br>03-1234-5678</p>
+            <p class="copyright">&copy; 2026 Cafe Luminous. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
